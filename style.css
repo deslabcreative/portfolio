@@ -1,0 +1,285 @@
+/* Styling for the site www.kokich.co.nz */
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900');
+
+/* Master */
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-x: hidden;
+  transition-duration: 0.4s;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+body{
+  height: 500vh;
+}
+
+/* Text */
+
+  .title{
+    color: inherit;
+    font-size: 2.75em;
+    letter-spacing: 0.25vw;
+    font-weight: 800;
+  }
+  .sub-title{
+    color: inherit;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 5vh;
+    letter-spacing: 0.1vw;
+  }
+  p{
+    color: inherit;
+    font-size: 1.25em;
+    font-weight: 300;
+    letter-spacing: 0vw;
+    width: 65%;
+    margin-top: 5vh;
+    margin-left: 0;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  a.footerLink{
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height:2em;
+    letter-spacing: 0.1vw;
+    transition: 0.8s
+  }
+  a.footerLink:hover{
+    padding-left: 1vw;
+  }
+  a.sub-title{
+    transition: 0.8s;
+  }
+  a.sub-title:hover{
+    padding-left: 1vw;
+  }
+  a.active{
+    text-decoration: underline;
+  }
+
+/* Copyright & Credits */
+  .copyright{
+    bottom: 5vw;
+    left: 7.5vw;
+    position: fixed;
+    z-index: 20;
+  }
+  /* Deslab Creative, www.deslab.co.nz */
+  .deslab{
+    height: 1.25vw;
+    position: fixed;
+    bottom: 5vw;
+    right: 7.5vw;
+    z-index: 20;
+  }
+
+/* Default Tag Styling */
+
+  .hr{
+    width: 15vw;
+    height: 5px;
+    color: inherit;
+    border-bottom: 1.5px solid #000;
+    margin-left: 0;
+    position: absolute;
+  }
+  br{
+    line-height: inherit;
+  }
+
+/* Components */
+
+  .light{
+    background-color: #fff;
+    color: #000;
+  }
+  .dark{
+    background-color: #000;
+    color: #fff;
+  }
+
+  .left{
+    float: left;
+    padding-left: 7.5%;
+    position: fixed;
+    left: 0;
+  }
+
+  .right{
+    float: right;
+    padding-right: 7.5%;
+    position: fixed;
+    right: 0;
+
+  }
+
+/* Header Bar */
+
+  header{
+    width: 100vw;
+    height: 100px;
+    z-index: 20;
+    position: fixed;
+    overflow: hidden;
+  }
+    .logo{
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-left: 25px;
+      margin-top: 25px;
+      background-size: contain;
+      background-position: center;
+    }
+      .black{
+        background-image: url(images/logo.png);
+      }
+      .white{
+        background-image: url(images/placeholder.jpg);
+      }
+    .hamburger{
+      width: 50px;
+      height: 50px;
+      border-top: 5px solid #fff;
+      border-bottom: 5px solid #fff;
+      text-align: justify;
+      color: #fff;
+      float: right;
+      position: fixed;
+      right: 25px;
+      top: 25px;
+      cursor: pointer;
+      justify-content: center;
+      vertical-align: middle;
+    }
+
+    /* Navigation */
+      .nav{
+        list-style: none;
+      }
+
+
+/* View */
+  .view{
+    width: 100%;
+    height: 700vh;
+    z-index: 0;
+    overflow-x: hidden;
+    position: fixed;
+  }
+
+    .side{
+      width: 42.5%;
+      height: 60vh;
+      text-align:left;
+      margin-left: 0vw;
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+      display: block;
+      background-size: cover;
+      background-position: center;
+      position: fixed;
+    }
+
+    /* Testimonials */
+
+      /* Right Hand Side Paragraph */
+      .testimonials-right{
+        display: inline-block;
+        position: absolute;
+        vertical-align: middle;
+
+        font-size: 1.25em;
+        color: inherit;
+        width: 55%;
+        text-align: center;
+        padding-left: 22.5%;
+        padding-right: 22.5%;
+        padding-top: 30vh;
+      }
+
+      .testimonials-right p{
+        margin-top: 0%;
+        width: 100%;
+
+
+        color: inherit;
+        position: relative;
+
+
+      }
+
+    /* Footer */
+      footer{
+        height: 60vh;
+
+      }
+      /* Left Column */
+        .footer-left-column{
+          width: 42.5%;
+          height: 10em;
+          position: absolute;
+          display: inline-block;
+          float: left;
+          margin-top: calc((60vh - 10em) / 2);
+          color: inherit;
+
+        }
+
+      /* Right Column */
+        .footer-right-column{
+          width: 42.5%;
+          height: 26em;
+          position: absolute;
+          display: inline-block;
+          float: right;
+          right: 7.5%;
+          margin-top: calc((60vh - 23em) / 2);
+          font-size: 1.25em;
+          color: inherit;
+
+        }
+          /* Contact Field */
+            input{
+              width: 40%;
+              border: 0px;
+              border-bottom: 2px solid #fff;
+              margin-right: 40%;
+              color: inherit;
+            }
+            input[type="submit"]{
+              width: 40%;
+              border: 0px;
+              border-bottom: 0px solid #fff;
+              margin-right: 40%;
+              color: inherit;
+              text-align: center;
+            }
+            textarea{
+              width: 40%;
+              border: 0px;
+              border-bottom: 2px solid #fff;
+              margin-right: 40%;
+              height: 8em;
+              color: inherit;
+              resize: none;
+            }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: #fff;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+              color: #fff;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+              color: #fff;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+              color: #fff;
+            }
