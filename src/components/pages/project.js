@@ -1,9 +1,13 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Banner from "../layouts/banner";
-import Footer from "../layouts/footer";
-import Back from "../layouts/back";
-import ProjectImage from "../images/no6.jpg";
+import ProjectImage from "../images/7.png";
+import * as contentful from 'contentful'
+
+var client = contentful.createClient({
+  space: '1tqtqya8ol6q',
+  accessToken: 'de8c7b87d35580d080643a3663694b44f60bc5f0298d5f1bd7ff1124f583bc8e'
+})
 
 const Project = () => {
   return (

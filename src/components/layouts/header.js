@@ -6,7 +6,7 @@ export default class extends Component {
       <Fragment>
         <section className="header">
           <a href="../../"><img className="siteName" src={this.props.headerTitle} /></a>
-          <h1 className="navRight"> <a>Work</a><a>Clients</a><a>Contact</a></h1>
+          <nav className="navRight"> <a href="/work">Work</a><a href="/clients">Clients</a><a href="/contact">Contact</a></nav>
         </section>
       </Fragment>
     );

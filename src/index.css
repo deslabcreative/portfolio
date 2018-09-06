@@ -153,11 +153,11 @@ a{
 }
 .banner {
   width: 100vw;
-  height: 65vh;
+  height: 97.5vh;
   min-height: 335px;
   padding: 0;
   left: 0vw;
-  background-color: #0A00FF;
+  background-color: #DCD9D4;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -170,11 +170,11 @@ a{
 }
 .banner-bg {
   width: 100vw;
-  height: 65vh;
+  height: 97.5vh;
   min-height: 335px;
   padding: 0;
   left: 0vw;
-  background-color: #0A00FF;
+  background-color: #DCD9D4;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -184,7 +184,7 @@ a{
   text-align: left;
   padding-top: 0;
   overflow: hidden;
-  opacity: 0.2;
+  opacity: 0.4;
   top: 0;
 }
 .darken {
